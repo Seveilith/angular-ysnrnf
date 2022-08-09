@@ -1,0 +1,12 @@
+<app-tabs #tabs>
+  <app-tab title="Tab 1">
+    <ng-template tabContent> <p>Tab 1 content</p></ng-template>
+  </app-tab>
+  <app-tab title="Tab 2">
+    <ng-template tabContent> <p>Tab 2 content</p></ng-template>
+  </app-tab>
+</app-tabs>
+
+<p>Tab outlet below:</p>
+
+<div [tabOutlet]="tabs"></div>
